@@ -35,7 +35,7 @@ p <- ggplot() +
   theme(legend.position="none", axis.text=element_blank(), axis.ticks = element_blank(), axis.line = element_blank())
 
 # save figure
-tiff(file=paste0("tSNE_SII_Batch.tiff"), width = 7, height = 7, units = 'in', res = 300, compression = "none")
+tiff(file=paste0("StageII/tSNE_SII_Batch.tiff"), width = 7, height = 7, units = 'in', res = 300, compression = "none")
 print(p)
 dev.off()
 
@@ -80,7 +80,7 @@ for (gene in genes) {
     theme(legend.position=("none"))
   
 # save figures for each gene  
-  tiff(file=paste0("SII_tSNE_",gene,"_mean",0.4,"_dim",10,".tiff"), width = 7, height = 7, units = 'in', res = 300, compression = "none")
+  tiff(file=paste0("StageII/SII_tSNE_",gene,"_mean",0.4,"_dim",10,".tiff"), width = 7, height = 7, units = 'in', res = 300, compression = "none")
   print(p)
   dev.off()
 }
