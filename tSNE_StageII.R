@@ -13,7 +13,7 @@ library(monocle)
 ### Load data ----
 load("Data/AGG_estimate_size_and_dispersion.Robj")
 
-# Subset Stage I cells
+# Subset Stage II cells
 AGG3 <- AGG[, pData(AGG)$Batch %in% c("XEN","SII8D","SII12D")]
 AGG3 <- detectGenes(AGG3, min_expr = 0.1)
 
