@@ -6,3 +6,6 @@ Paper can be download from https://www.ncbi.nlm.nih.gov/pubmed/29937202
 
 # pre-requirement
 Should first download processed data GSE114952_AGG.tar.gz from GEO:GSE114952
+
+# future direction
+Consider to make a complete notebook for this work. 
